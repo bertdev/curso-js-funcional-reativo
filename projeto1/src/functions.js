@@ -52,12 +52,40 @@ function removerElementosSeApenasNumero(array) {
 function removerCaracteres(simbolos) {
 		return function(array) {
 				return array.map(el => {
-						let textoSemSimbolos = el;
-						simbolos.forEach(char => {
-								textoSemSimbolos = textoSemSimbolos.split(char).join("");
-						});
-						return textoSemSimbolos;
+						return simbolos.reduce((acc, simbolo) => {
+								return acc.split(simbolo).join("");
+						}, el);
 				});
+		};
+};
+
+function mesclarElementos(elementos) {
+		return elementos.join("");
+};
+
+function separarTextoPor(separador) {
+		return texto => texto.split(separador);
+};
+
+function agruparPalavras(palavras) {
+		return Object.values(palavras.reduce((agrupamento, palavra) => {
+				const p = palavra.toLowerCase();
+				const qtde = agrupamento[p] ? agrupamento[p].qtde += 1 : 1;
+				agrupamento[p] = {
+						elemento: p,
+						qtde
+				};
+
+				return agrupamento;
+		}, {}));
+};
+
+function ordenarPorAtribNumerico(attr, ordem = "asc") {
+		return array => {
+				const asc = (obj1, obj2) => obj1[attr] - obj2[attr];
+				const desc = (obj1, obj2) => obj2[attr] - obj1[attr];
+
+				return array.sort(ordem === "asc" ? asc : desc);
 		};
 };
 
@@ -69,4 +97,8 @@ module.exports = {
 		removerElementosSeInlcuir,
 		removerElementosSeApenasNumero,
 		removerCaracteres,
+		mesclarElementos,
+		separarTextoPor,
+		agruparPalavras,
+		ordenarPorAtribNumerico
 };
