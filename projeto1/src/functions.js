@@ -86,15 +86,15 @@ function ordenarPorAtribNumerico(attr, ordem = "asc") {
 };
 
 module.exports = {
-		lerDiretorio, 
-		filtrarPorExtensao,
-		lerArquivos,
-		removerElementosSeVazio,
-		removerElementosSeInlcuir,
-		removerElementosSeApenasNumero,
-		removerCaracteres,
-		mesclarElementos,
-		separarTextoPor,
-		agruparPalavras,
-		ordenarPorAtribNumerico
+	lerDiretorio, 
+	filtrarPorExtensao,
+	lerArquivos,
+	removerElementosSeVazio,
+	removerElementosSeInlcuir,
+	removerElementosSeApenasNumero,
+	removerCaracteres,
+	mesclarElementos,
+	separarTextoPor,
+	agruparPalavras,
+	ordenarPorAtribNumerico
 };
