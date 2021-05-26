@@ -8,8 +8,20 @@
 const PI = 3.14;
 
 //função impura - PI é um valor externo e não está sendo passado como parametro
-function areaCirculo(raio) {
+function areaCircunferencia(raio) {
     return raio * raio * PI;
 };
 
-console.log(areaCirculo(10));
+//função impura - PI não veio através dos parametros 
+//function areaCircunferencia(raio) {
+//    return raio * raio * Math.PI;
+//};
+ 
+console.log(areaCircunferencia(10));
+
+//Pura
+function areaCircunferenciaPuro(raio, pi) {
+    return raio * raio * pi;
+};
+
+console.log(areaCircunferenciaPuro(10, 3.14));
