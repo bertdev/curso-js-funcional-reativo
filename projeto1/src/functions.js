@@ -82,7 +82,7 @@ function agruparPalavras(palavras) {
 function ordenarPorAtribNumerico(attr, ordem = "asc") {
 	const asc = (obj1, obj2) => obj1[attr] - obj2[attr];
 	const desc = (obj1, obj2) => obj2[attr] - obj1[attr];
-	return array => array.sort(ordem === "asc" ? asc : desc);
+	return array => [...array].sort(ordem === "asc" ? asc : desc);
 };
 
 module.exports = {
