@@ -26,4 +26,3 @@ fun.lerDiretorio(caminho)
 	.then(fun.agruparPalavras)
 	.then(fun.ordenarPorAtribNumerico("qtde", "desc"))
 	.then(console.log);
-
