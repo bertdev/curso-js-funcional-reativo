@@ -31,5 +31,6 @@ const forcarNomeProdutoValido = forcarTamanhoPadrao("Nome produto inválido");
 forcarNomeProdutoValido(p1.nome);
 
 //quando usamos currying, altomaticamente recebemos um 
-//lazy evaluation, avaliar parte do código de forma tardia 
+//lazy evaluation, adiar parte do código para ser executado
+//de forma tardia  
 
