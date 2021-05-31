@@ -6,7 +6,9 @@ Como surgem novos frameworks js muito frequentemente, acredito que uma boa forma
 
 ## Assuntos estudados 📚
 
-
+- [Básico de funções](https://github.com/bertdev/curso-js-funcional-reativo/tree/main/funcoes)
+- [Projeto 1](https://github.com/bertdev/curso-js-funcional-reativo/tree/main/projeto1)
+- [Príncipios da programação funcional](https://github.com/bertdev/curso-js-funcional-reativo/tree/main/principios-prog-funcional)
 
 ## Contatos 📬
 
